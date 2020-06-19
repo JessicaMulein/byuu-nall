@@ -6,7 +6,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 set(NALL_VERSION "0.110.1")
 set(NALL_VERSION_MAJOR "0")
 set(NALL_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
-set(NALL_INCLUDE_ROOT ${NALL_ROOT}/nall)
+set(NALL_INCLUDE_ROOT ${NALL_ROOT}/include/nall)
 
 project(nall
     LANGUAGES CXX
@@ -258,4 +258,4 @@ set(SOURCE_FILES
 )
 
 add_library(nall INTERFACE)
-target_include_directories(nall INTERFACE ${NALL_INCLUDE_ROOT}/)
+target_include_directories(nall INTERFACE ${NALL_INCLUDE_ROOT}/../)
